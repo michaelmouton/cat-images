@@ -1,0 +1,13 @@
+<IfModule mod_alias.c>
+	Alias /[IMGSRCDIR] /var/www/[IMGSRCDIR]
+</IfModule>
+
+<Directory "/var/www/[IMGSRCDIR]">
+	Order deny,allow
+	Deny from all
+	<FilesMatch "\.(jpg|html)$">
+		Order allow,deny
+		Allow from all
+	</FilesMatch>
+</Directory>
+
