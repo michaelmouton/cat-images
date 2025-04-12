@@ -21,5 +21,5 @@ do
 
 	cat ./source/html_template | sed -e "s%\[ERROR_NUM\]%$ERROR_NUM%g" -e "s%\[PROTOCOL\]%$PROTOCOL%" -e "s%\[FQDN\]%$FQDN%" -e "s%\[IMGSRCDIR\]%$IMGSRCDIR%" | tee ./output/html/$ERROR_NUM.html > /dev/null
 
-	echo "ErrorDocument $ERROR_NUM /$IMGSRCDIR/$ERROR_NUM.html" | tee -a ./output/cat-images.conf > /dev/null
+	echo "ErrorDocument $ERROR_NUM /$IMGSRCDIR$ERROR_NUM.html" | tee -a ./output/cat-images.conf > /dev/null
 done
