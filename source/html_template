@@ -1,22 +1,27 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="en">
 <head>
-	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>ERROR: [ERROR_NUM]</title>
 	<style>
-		body {
+		html, body {
+			margin: 0;
+			padding: 0;
+			height: 100%;
 			background-color: black;
+		}
+
+		body {
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			height: 100vh;
-			width: auto;
-			margin: 0;
 		}
+
 		img {
+			width: 100vw;
 			height: 100vh;
-			width: auto;
+			object-fit: contain;
 			display: block;
 		}
 	</style>
