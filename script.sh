@@ -5,12 +5,11 @@
 #IMGSRCDIR=cat-images/
 
 PROTOCOL=
-FQDN=.
+FQDN=
 IMGSRCDIR=
 
 mkdir -p ./output/html
 cp ./cat-images/*.jpg ./output/html
-cp ./source/errorstyle.css ./output/html
 touch ./output/cat-images.conf
 
 cat ./source/apache2_template | sed -e "s%\[IMGSRCDIR\]%$IMGSRCDIR%g" | tee -a ./output/cat-images.conf > /dev/null
