@@ -4,25 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ERROR: [ERROR_NUM]</title>
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      background-color: black;
-    }
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    img {
-      width: 100vw;
-      height: 100vh;
-      object-fit: contain;
-      display: block;
-    }
-  </style>
+  <link rel="stylesheet" href="[PROTOCOL][FQDN]/[IMGSRCDIR]errorstyle.css">
 </head>
 <body>
   <img src="[PROTOCOL][FQDN]/[IMGSRCDIR][ERROR_NUM].jpg" alt="Error [ERROR_NUM]">
